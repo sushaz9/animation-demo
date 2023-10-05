@@ -1,18 +1,8 @@
 body {
   margin: 3rem;
-  background-image: url(https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
-}
-
-h1 {
-  font-family: "Homer Simpson Revised";
-  color: rgb(247, 230, 115);
-  display: flex;
-}
-
-body {
   height: 600px;
   width: 1000px;
   background-image: url("https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg"),
@@ -30,17 +20,13 @@ body {
   }
 }
 
-.seven {
+h1 {
+  font-family: "Homer Simpson Revised";
+  color: rgb(247, 230, 115);
   display: flex;
-  text-align: center;
 }
 
-.seven > div {
-  width: auto;
-  margin: 1rem auto;
-}
-
-.seven .text {
+.text {
   font-size: 6rem;
   margin: 1rem auto;
   color: rgb(247, 230, 115);
