@@ -1,10 +1,8 @@
 body {
-  margin: 0;
-  background-color: bisque;
+  margin: 3rem;
   background-image: url(https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg);
   background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -14,7 +12,54 @@ h1 {
   display: flex;
 }
 
-.square {
+body {
+  height: 600px;
+  width: 1000px;
+  background-image: url("https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg"),
+    url("https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg"),
+    url("https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg"),
+    url("https://i.pinimg.com/originals/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg");
+
+  animation: para 50s infinite linear;
+}
+
+@keyframes para {
+  100% {
+    background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%,
+      400px 0;
+  }
+}
+
+.seven {
+  display: flex;
+  text-align: center;
+}
+
+.seven > div {
+  width: auto;
+  margin: 1rem auto;
+}
+
+.seven .text {
+  font-size: 6rem;
+  margin: 1rem auto;
+  color: rgb(247, 230, 115);
+  font-family: "Homer Simpson Revised";
+  line-height: 0;
+  animation: disappear 4s 2s both infinite;
+}
+
+@keyframes disappear {
+  50% {
+    text-shadow: 0 0 40px #cbc7c7;
+  }
+  to {
+    text-shadow: 0 0 20px #cbc7c7;
+    opacity: 0;
+  }
+}
+
+/*.square {
   margin: 3rem;
   width: 200px;
   height: 200px;
@@ -35,4 +80,4 @@ h1 {
     background: red;
     transform: rotate(360deg);
   }
-}
+}*/
